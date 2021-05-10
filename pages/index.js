@@ -9,14 +9,26 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
+      <main
+        style={{
+          backgroundImage: "url(chuckwagon_coneandhouse.jpg)",
+          width: "100vw",
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+        }}
+        className={`${styles.main} `}
+      >
         <h1 className={styles.title}>The Chuckwagon</h1>
 
         <h2 className={styles.description}>Open Monday May 10th 4pm</h2>
 
-        <p className={styles.description}>Vanilla And Chocolate Softserved</p>
-        <p className={styles.description}>Movie Theater Popcorn</p>
-        <p className={styles.description}>Loaded Dogs</p>
+        <p className={styles.description}>
+          🍦 Vanilla And Chocolate Softserved
+        </p>
+        <p className={styles.description}>🍿 Movie Theater Popcorn</p>
+        <p className={styles.description}>🌭 Loaded Dogs</p>
       </main>
 
       <footer className={styles.footer}>
@@ -29,6 +41,15 @@ export default function Home() {
           <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
         </a>
       </footer>
+      <style jsx>{`
+        h1,
+        h2,
+        p {
+          background-color: brown;
+          color: white;
+          padding: 3px;
+        }
+      `}</style>
     </div>
   );
 }
