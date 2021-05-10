@@ -1,7 +1,7 @@
 import React from "react";
 
 const test = () => {
-  return <div>TEST</div>;
+  return <div>HOT RELOAD sdfgsdg</div>;
 };
 
 export default test;
